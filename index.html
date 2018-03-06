@@ -9,7 +9,6 @@
     <meta name="keywords" content="free website for building resume, free resume, freshers resume, resume for graduates, free resume builder">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -17,48 +16,19 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Josefin+Sans|Sarala" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/style.css" >
 
     <style>
-	body{
-		font-family: 'Varela Round','Roboto','Helvetica','sans-serif';
-	}
-    .navbar{
-        transition:500ms ease;
-        background:transparent !important;
-      }
-      .navbar.scrolled{
-        background:#222 !important;
-      }
-      .nav-link{
-        padding-top:0.5rem;
-      }
-      .navbar-nav .active>.nav-link{
-        color:#ffffff !important;
-      }
-      .navbar-nav .active>.nav-link:hover{
-        color:#007bff !important;
-      }
-      .jumbotron{
+    /*dont remove this shit, else it will not wrok*/
+    .jumbotron{
         background-color:#007bff; 
         background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/5.jpeg') ;
 		background-size:cover;
 		color: #ffffff;
         height: 85vh;
       }
-      .navbar-brand{
-        color:white !important;
-      }
-      .fa:hover{
-        transition: 200ms ease-in-out;
-        color:#28a745 !important;
-        cursor: pointer;
-      }
-      .footer{
-          padding:2%;
-          background-color: #222;
-      }
     </style>
-    
+
     <script>
     $(window).scroll(function(){
         $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
@@ -74,6 +44,8 @@
         setTimeout(typeWriter, speed);
         }
     }
+    //card flipper
+    document.querySelector(".card-flip").classList.toggle("flip");
     </script>
         
   </head>
@@ -165,8 +137,101 @@
 
 <br><br>
 
-<div id="features">
-            <section class="container-fluid text-center">
+<div id="features">  
+    <div class="container">
+        <h1 class="text-right" style="color:#007bff">Features</h1><br>
+        <div class="row">            
+            <div class="col-lg-4">
+        		<!-- Card Flip -->
+				<div class="card-flip">
+					<div class="flip">
+						<div class="front">
+							<!-- front content -->
+							<div class="card">
+                                <div class="card-block">
+                                    <i class="fa fa-file-o" style="color:#007bff;font-size:150px;padding-top:2vh;padding-bottom:2vh;"></i>
+                                
+                                </div>
+							</div>
+						</div>
+						<div class="back">
+							<!-- back content -->
+							<div class="card">
+							  <div class="card-block">
+							    <h2 class="card-title" style="color:red;padding:10px;">Fully Responsive</h2>
+							    <h5 class="card-subtitle text-muted">This theme will look great on any device, no matter the size!</h5>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+        		<!-- End Card Flip -->
+			</div>
+        
+            <div class="col-lg-4">
+        		<!-- Card Flip -->
+				<div class="card-flip">
+					<div class="flip">
+						<div class="front">
+							<!-- front content -->
+							<div class="card">
+                                <div class="card-block">
+                                    <i class="fa fa-cloud-download"  style="color:#007bff;font-size:150px;padding-top:2vh;padding-bottom:2vh;"></i>                                
+                                </div>
+							</div>
+						</div>
+						<div class="back">
+							<!-- back content -->
+							<div class="card">
+							  <div class="card-block">
+							    <h2 class="card-title" style="color:red;padding:10px;">Bootstrap 4 Ready</h2>
+							    <h5 class="card-subtitle text-muted">Featuring the latest build of the new Bootstrap 4 framework!</h5>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+        		<!-- End Card Flip -->
+			</div>
+            
+            <div class="col-lg-4">
+        		<!-- Card Flip -->
+				<div class="card-flip">
+					<div class="flip">
+						<div class="front">
+							<!-- front content -->
+							<div class="card">
+                                <div class="card-block">
+                                    <i class="fa fa-code-fork"  style="color:#007bff;font-size:150px;padding-top:2vh;padding-bottom:2vh;"></i>                                
+                                </div>
+							</div>
+						</div>
+						<div class="back">
+							<!-- back content -->
+							<div class="card">
+							  <div class="card-block">
+							    <h2 class="card-title" style="color:#007bff;font-size:150px;padding-top:2vh;padding-bottom:2vh;">Easy to use</h2>
+							    <h5 class="card-subtitle text-muted">Ready to use with your own content, or customize the source files!</h5>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+        		<!-- End Card Flip -->
+			</div>
+        
+        
+
+
+
+        </div>
+    </div>
+</div>
+
+    <!--<script  src="js/index.js"></script>
+
+
+            <!--<section class="container-fluid text-center">
                         <div class="container">
                         <h1 class="text-left" style="color:#007bff">Features</h1><br>
                         <div class="row">
@@ -188,7 +253,7 @@
                                 </div>
                             </div>
                         </div>
-            </section>
+            </section> -->
 </div>
 
 <br><br>

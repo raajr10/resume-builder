@@ -1,0 +1,79 @@
+body{
+		font-family: 'Varela Round','Roboto','Helvetica','sans-serif';
+	}
+    .navbar{
+        transition:500ms ease;
+        background:transparent !important;
+      }
+      .navbar.scrolled{
+        background:#222 !important;
+      }
+      .nav-link{
+        padding-top:0.5rem;
+      }
+      .navbar-nav .active>.nav-link{
+        color:#ffffff !important;
+      }
+      .navbar-nav .active>.nav-link:hover{
+        color:#007bff !important;
+      }
+      .navbar-brand{
+        color:white !important;
+      }
+      .fa:hover{
+        transition: 200ms ease-in-out;
+        color:#28a745 !important;
+        cursor: pointer;
+      }
+      .footer{
+          padding:2%;
+          background-color: #222;
+      }
+    /* card css  */
+    .card-flip {
+        -webkit-perspective: 500px;
+                perspective: 500px;
+        }
+        .card-flip:hover .flip, .card-flip.hover .flip {
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+        }
+
+        .card-flip,
+        .front,
+        .back {
+        width: 250px;
+        height: 250px;
+        }
+
+        .flip {
+        -webkit-transition: 0.6s;
+        transition: 0.6s;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        position: relative;
+        }
+
+        .front,
+        .back {
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+		}
+		.card{
+			text-align: center;
+		}
+
+        .front {
+        z-index: 2;
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+        }
+
+        .back {
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+        }
+ 
