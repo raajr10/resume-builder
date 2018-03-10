@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Material Design for Bootstrap fonts and icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+  <!-- Material Design for Bootstrap CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+	<title>Resume Page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+	        <div class="container">
+	            <a class="navbar-brand" href="#">Logo and Company Name</a>
+	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	              <span class="navbar-toggler-icon"></span>
+	            </button>
+	      
+	        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	          <ul class="navbar-nav ml-auto">
+	              <li class="nav-item active">
+	                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	              </li>
+	              <li class="nav-item">
+	                      <a class="nav-link" href="#">About Us </a>
+	              </li>
+	          </ul>
+	            <button class="btn btn-outline-info" type="submit">Sign Up</button>
+	        </div>
+	        </div>
+	    </nav>	
+	</header>
+	<main>
+		<div class="jumbotron jumbotron-fluid">
+      <div class="container" id="vue-app">
+        
+        <div class="row">
+          <div class="col-4">
+            <nav>
+              <div class="row nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-personal-tab" data-toggle="tab" href="#nav-personal" role="tab" aria-controls="nav-personal" aria-selected="true">Personal</a>
+                <a class="nav-item nav-link" id="nav-objective-tab" data-toggle="tab" href="#nav-objective" role="tab" aria-controls="nav-objective" aria-selected="false">Objective</a>
+                <a class="nav-item nav-link" id="nav-educational-tab" data-toggle="tab" href="#nav-educational" role="tab" aria-controls="nav-educational" aria-selected="false">Education</a>
+                <a class="nav-item nav-link" id="nav-skill-tab" data-toggle="tab" href="#nav-skill" role="tab" aria-controls="nav-skill" aria-selected="false">Skills</a>
+                <a class="nav-item nav-link" id="nav-achievement-tab" data-toggle="tab" href="#nav-achievement" role="tab" aria-controls="nav-achievement" aria-selected="false">Achievements</a>
+                <a class="nav-item nav-link" id="nav-experience-tab" data-toggle="tab" href="#nav-experience" role="tab" aria-controls="nav-experience" aria-selected="false">Experience</a>
+                <a class="nav-item nav-link" id="nav-hobby-tab" data-toggle="tab" href="#nav-hobby" role="tab" aria-controls="nav-hobby" aria-selected="false">Hobby</a>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-personal" role="tabpanel" aria-labelledby="nav-personal-tab">
+                <div class="row input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Name" v-model="name"/>                            
+                </div>
+                <div class="row input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Address" v-model="address"/>                
+                </div>
+                <div class="row input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Phone No." v-model="phone"/> 
+                </div>
+                <div class="row input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Email Id" v-model="email"/> 
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-objective" role="tabpanel" aria-labelledby="nav-objective-tab">
+                <div class="row input-group">
+                  <textarea class="form-control" placeholder="Short description of you" aria-label="With textarea"></textarea>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-educational" role="tabpanel" aria-labelledby="nav-educational-tab">
+                
+              </div>
+              <div class="tab-pane fade" id="nav-skill" role="tabpanel" aria-labelledby="nav-skill-tab">
+                
+              </div>
+              <div class="tab-pane fade" id="nav-achievement" role="tabpanel" aria-labelledby="nav-achievement-tab">
+                
+              </div>
+              <div class="tab-pane fade" id="nav-experience" role="tabpanel" aria-labelledby="nav-experience-tab">
+                
+              </div>
+              <div class="tab-pane fade" id="nav-hobby" role="tabpanel" aria-labelledby="nav-hobby-tab">
+                
+              </div>
+            </div>
+            
+          </div>
+            
+          <div class="col-8">
+            <span>{{ name }}</span> <br>
+            <span>{{ address }}</span> <br>
+            <span>{{ phone }}</span> <br>
+            <span>{{ email }}</span> <br>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+	</main>
+
+
+	<script type="text/javascript" src="app.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+  <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+</body>
+</html>
