@@ -108,10 +108,13 @@ transform: rotateY(180deg);
   color: #d14;
   -webkit-transition: all .25s;
   transition: all .25s;
+  text-decoration: none;
+
 }
 #team .person .github:before {
   color: #ccc;
-  font: 14px FontAwesome;
+  font: 25px FontAwesome;
   content: "\f09b";
   margin-right: 6px;
+  text-decoration: none;
 }
