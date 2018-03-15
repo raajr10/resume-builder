@@ -4,13 +4,22 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Material Design for Bootstrap fonts and icons https://stackoverflow.com/questions/17293135/download-a-div-in-a-html-page-as-pdf-using-javascript-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Material Design for Bootstrap CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Josefin+Sans|Sarala" rel="stylesheet">
 
-	<title>Just Resume-Resume Builder</title>
+
+    <!--  Material Design for Bootstrap fonts and icons https://stackoverflow.com/questions/17293135/download-a-div-in-a-html-page-as-pdf-using-javascript
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+    Material Design for Bootstrap CSS
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    -->
+	<title>Just Resume- A free resume building tool</title>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 <style>
     h4{
@@ -31,26 +40,35 @@ td, th {
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
-	        <div class="container">
-	            <a class="navbar-brand" href="#">Logo and Company Name</a>
-	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	              <span class="navbar-toggler-icon"></span>
-	            </button>
-	      
-	        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	          <ul class="navbar-nav ml-auto">
-	              <li class="nav-item active">
-	                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-	              </li>
-	              <li class="nav-item">
-	                      <a class="nav-link" href="#">About Us </a>
-	              </li>
-	          </ul>
-	            <button class="btn btn-outline-info" type="submit">Sign Up</button>
-	        </div>
-	        </div>
-	    </nav>	
+		<nav class="navbar navbar-toggleable-md navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><span style="font-family:'Sarala', sans-serif;color:#007bff">Just</span> <span style="font-family:'Sarala', sans-serif;font-weight:bold">Resume</span></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>  
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html#home">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html#about">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html#features">Features</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html#themes">Themes</a>
+                        </li>
+                        <li class="nav-item active">
+                                <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <a href="#"><button type="button" class="btn btn-success">Sign In</button></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>  
+	
 	</header>
 	<main>
 		<div class="jumbotron jumbotron-fluid">
