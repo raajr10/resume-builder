@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js" integrity="sha384-CchuzHs077vGtfhGYl9Qtc7Vx64rXBXdIAZIPbItbNyWIRTdG0oYAqki3Ry13Yzu" crossorigin="anonymous"></script>
+	<title>Print Demo</title>
+	<script type="text/javascript">
+	// Default export is a4 paper, portrait, using milimeters for units
+	var doc = new jsPDF()
+
+	doc.text('Hello world!', 10, 10)
+	doc.save('a4.pdf')
+	</script>
+</head>
+	
+
+<body>
+
+
+</body>
+</html>
