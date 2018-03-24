@@ -37,13 +37,8 @@ new Vue({
         sdate3:'',
         edate3:'',
         companylocation1:'',
-        cdes1:'',
-        companyname2:'',
-        comdesignation2:'',
-        sdate4:'',
-        edate4:'',
-        companylocation2:'',
-        cdes2:'',
+        cdes1:''
+        
 	},
 	methods: {
 		
