@@ -42,5 +42,6 @@ new Vue({
 	},
 	methods: {
 		
+		
 	}
 });
