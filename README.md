@@ -2,7 +2,6 @@
 
 ## [Live Demo](https://www.youtube.com/watch?v=7olYCzeObVk) 
 
-
-
-
 ![Home](img/home.jpg)
+
+![Home](img/next.jpg)
