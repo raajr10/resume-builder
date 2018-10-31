@@ -5,3 +5,8 @@
 ![Home](img/home.jpg)
 
 ![Home](img/next.jpg)
+
+![Home](img/team.jpg)
+
+![Home](img/resume.jpg)
+
