@@ -10,3 +10,9 @@
 
 ![Home](img/resume.jpg)
 
+### Developers
+Suraj Pawar
+
+Raaj Raisinghani
+
+Om Uparkar
