@@ -10,3 +10,7 @@
 
 ![Home](img/resume.jpg)
 
+## Developers
+- Suraj 
+- Raaj
+- Om
