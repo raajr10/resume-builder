@@ -46,14 +46,6 @@
     //card flipper
     document.querySelector(".card-flip").classList.toggle("flip");
 
-    function myMap() {
-        var mapProp= {
-            center:new google.maps.LatLng(51.508742,-0.120850),
-            zoom:5,
-        };
-        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
-
     </script>
         
   </head>
@@ -324,43 +316,38 @@
 
 <div id="contact" class="container-fluid bg-light">
     <div class="container">
-        <h1 class="text-left" style="color:#007bff">Contact Us</h1><br>
+        <h1 class="text-right" style="color:#007bff">Contact Us</h1><br>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <form class="form-horizontal" action="" method="post">
                     <!-- Name input-->
                     <div class="form-group">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
                         </div>
                     </div>
             
                     <!-- Email input-->
                     <div class="form-group">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
                         </div>
                     </div>
             
                     <!-- Message body -->
                     <div class="form-group">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
                         </div>
                     </div>
             
                     <!-- Form actions -->
                     <div class="form-group">
-                        <div class="col-md-6 text-center">
+                        <div class="col-md-12 text-center">
                             <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                         </div>
                     </div>
                 </form>
-            </div>
-
-            <div class="col-md-6">
-                <div id="googleMap" style="width:500px;height:300px;"></div>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvvKzM2u6CP90R6WQJySMUbbiZqfFaFJg&callback=myMap"></script>
             </div>
         </div>
     
@@ -394,7 +381,7 @@
             <strong style="color:#DDD">Connect with Us</strong>
             <ul class="list-inline mb-0">
             <li class="list-inline-item mr-3">
-                <a href="https://github.com/raajr10/resume-builder">
+                <a href="https://github.com/ssp4all/resume-builder">
                     <i class="fa fa-github" style="color:#CCC;font-size:36px"></i>
                 </a>
             </li>            
